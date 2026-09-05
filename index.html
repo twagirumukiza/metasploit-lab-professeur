@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cyber Security Academy — V3</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand" onclick="app.goDashboard()"><span class="brandmark">CS</span><span>Cyber Security <b>Academy</b><small>FORMATION LAB · V3</small></span></div>
+  <nav>
+    <button id="langBtn">EN</button><button id="themeBtn">☾</button><button id="fontDown">A−</button><button id="fontUp">A+</button>
+    <button id="exportBtn">Exporter</button><button id="resetBtn" class="danger">Réinitialiser</button>
+  </nav>
+</header>
+
+<div class="app-shell">
+<aside class="sidebar">
+  <div class="profile-card"><div class="avatar">CS</div><div><b>Cyber Security Academy</b><small>Parcours Social Engineering</small></div></div>
+  <button class="nav-item active" data-view="dashboard">⌂ <span>Tableau de bord</span></button>
+  <button class="nav-item" data-view="modules">▣ <span>Parcours de formation</span></button>
+  <button class="nav-item" data-view="exam">★ <span>Évaluation finale</span></button>
+  <div class="sidebar-title">PROGRESSION</div>
+  <div class="mini-progress"><i id="sideProgress"></i></div><small id="sideProgressText">0% terminé</small>
+  <div class="sidebar-bottom">
+    <button class="nav-item" id="legalBtn">ⓘ <span>Mentions légales</span></button>
+    <button class="nav-item" id="cguBtn">▤ <span>CGU</span></button>
+    <button class="nav-item" id="licenceBtn">© <span>Licence</span></button>
+  </div>
+</aside>
+
+<main id="main"></main>
+</div>
+
+<div class="modal" id="modal"><div class="modal-box"><button class="close" id="closeModal">×</button><h2 id="modalTitle"></h2><div id="modalBody"></div></div></div>
+
+<footer><div>© Cyber Security Academy · <a href="#" id="footerLegal">Mentions légales</a> · <a href="#" id="footerCgu">CGU</a> · <a href="#" id="footerLicence">Licence</a></div><div>Formation cybersécurité · Environnement pédagogique simulé</div></footer>
+<script src="app.js"></script>
+</body>
+</html>
